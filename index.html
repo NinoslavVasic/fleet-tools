@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fleet Calculators - Piece of Cake</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleet Financial Tools – Piece of Cake</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -11,33 +11,114 @@
       padding: 50px 20px;
       background: #f8f9fa;
       color: #333;
+      margin: 0;
     }
-    .logo { width: 220px; margin-bottom: 20px; }
-    h1 { color: #2c3e50; margin-bottom: 30px; }
+    .logo {
+      width: 240px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+    .tools {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .tool-card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 280px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .tool-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .tool-card h3 {
+      color: #FF6B00;
+      margin: 0 0 10px 0;
+      font-size: 20px;
+    }
+    .tool-card p {
+      color: #555;
+      font-size: 14px;
+      margin: 8px 0;
+    }
     .btn {
       display: inline-block;
-      margin: 15px;
-      padding: 18px 32px;
-      font-size: 18px;
+      margin-top: 15px;
+      padding: 12px 24px;
       background: #FF6B00;
       color: white;
       text-decoration: none;
-      border-radius: 10px;
+      border-radius: 8px;
       font-weight: bold;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: 0.2s;
+      font-size: 15px;
+      transition: background 0.2s;
     }
-    .btn:hover { background: #E55A00; transform: translateY(-2px); }
-    .footer { margin-top: 60px; font-size: 14px; color: #666; }
+    .btn:hover {
+      background: #E55A00;
+    }
+    .footer {
+      margin-top: 60px;
+      font-size: 13px;
+      color: #666;
+    }
+    .footer a {
+      color: #FF6B00;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .tools { flex-direction: column; align-items: center; }
+      .tool-card { width: 90%; }
+    }
   </style>
 </head>
 <body>
-  <img src="https://mypieceofcakemove.com/wp-content/uploads/2023/05/Piece-of-Cake-Moving-NYC-Best-Mover-Moving-Company.jpg" alt="Piece of Cake Logo" class="logo" />
-  <h1>Fleet Financial Calculators</h1>
-  <a href="driver-commission-calculator.html" class="btn">Driver Commission Calculator</a><br>
-  <a href="truck-financing-calculator.html" class="btn">Truck Financing Calculator</a>
-  <div class="footer">
-    Powered by <a href="https://mypieceofcakemove.com" style="color:#FF6B00;">Piece of Cake Moving & Storage</a>
+
+  <img src="https://mypieceofcakemove.com/wp-content/uploads/2023/05/Piece-of-Cake-Moving-NYC-Best-Mover-Moving-Company.jpg" alt="Piece of Cake Logo" class="logo">
+
+  <h1>Fleet Financial Tools</h1>
+
+  <div class="tools">
+    <!-- Driver Commission -->
+    <div class="tool-card">
+      <h3>Driver Commission Calculator</h3>
+      <p>Compare tiered vs. flat rate earnings per mile.</p>
+      <p><strong>Perfect for:</strong> Weekly pay estimates</p>
+      <a href="driver-commission-calculator.html" class="btn">Open Tool</a>
+    </div>
+
+    <!-- Truck Financing -->
+    <div class="tool-card">
+      <h3>Truck Financing Calculator</h3>
+      <p>Compare Purchase, Finance Lease, and Operational Lease.</p>
+      <p><strong>Features:</strong> Charts, NPV, PDF export</p>
+      <a href="truck-financing-calculator.html" class="btn">Open Tool</a>
+    </div>
+
+    <!-- Finance Lease Simulator -->
+    <div class="tool-card">
+      <h3>Finance Lease Simulator</h3>
+      <p>Deep-dive into finance lease cash flows & NPV.</p>
+      <p><strong>Features:</strong> Residual benefit toggle, PDF</p>
+      <a href="finance-lease-simulator.html" class="btn">Open Tool</a>
+    </div>
   </div>
+
+  <div class="footer">
+    Powered by <a href="https://mypieceofcakemove.com" target="_blank">Piece of Cake Moving & Storage</a>
+    <br>
+    <em>No login. Works on any device. Export & print reports.</em>
+  </div>
+
 </body>
 </html>
